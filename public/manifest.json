@@ -1,0 +1,18 @@
+{
+  "name": "Gym Buddy",
+  "short_name": "GymBuddy",
+  "description": "AI-Powered Personal Gym Coach",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#f97316",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
