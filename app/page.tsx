@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import {
   Dumbbell,
@@ -12,6 +12,7 @@ import {
   Scale,
   Plus,
   X,
+  Trash2,
 } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
 import { db, type WorkoutSession, type BodyWeight } from "@/lib/db";
@@ -37,6 +38,7 @@ export default function HomePage() {
   const [showWeighIn, setShowWeighIn] = useState(false);
   const [weighInValue, setWeighInValue] = useState("");
   const [workoutDates, setWorkoutDates] = useState<Set<string>>(new Set());
+  const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
   const unit = getSettings().unit;
 
   useEffect(() => {
@@ -106,6 +108,22 @@ export default function HomePage() {
 
     loadData();
   }, []);
+
+  const deleteSession = async (sessionId: string) => {
+    // Delete all sets for this session
+    const sets = await db.sets.where("sessionId").equals(sessionId).toArray();
+    await db.sets.bulkDelete(sets.map((s) => s.id));
+    // Delete the session
+    await db.sessions.delete(sessionId);
+    // Update UI
+    setRecentSessions((prev) => prev.filter((s) => s.id !== sessionId));
+    setStats((prev) => ({
+      ...prev,
+      totalSessions: prev.totalSessions - 1,
+      totalSets: prev.totalSets - sets.length,
+    }));
+    setConfirmDelete(null);
+  };
 
   const logBodyWeight = async () => {
     const w = parseFloat(weighInValue);
@@ -307,32 +325,128 @@ export default function HomePage() {
             </p>
           </div>
         ) : (
-          <div className="space-y-2">
-            {recentSessions.map((session) => (
-              <Link
-                key={session.id}
-                href={`/workout/history?id=${session.id}`}
-                className="p-3 rounded-xl bg-card border border-card-border flex items-center justify-between"
+          <>
+            <div className="space-y-2">
+              {recentSessions.map((session) => (
+                <SwipeableSession
+                  key={session.id}
+                  session={session}
+                  onDelete={() => setConfirmDelete(session.id)}
+                />
+              ))}
+            </div>
+
+            {/* Delete Confirmation */}
+            {confirmDelete && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+                onClick={() => setConfirmDelete(null)}
               >
-                <div>
-                  <p className="font-semibold text-sm">{session.name}</p>
+                <div
+                  className="w-full max-w-sm p-4 rounded-2xl bg-card border border-card-border space-y-3"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <p className="font-bold text-sm">Delete Workout?</p>
                   <p className="text-xs text-muted">
-                    {new Date(session.date).toLocaleDateString("en-US", {
-                      weekday: "short",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                    {session.duration && ` · ${session.duration} min`}
+                    This will permanently delete this session and all its logged sets.
                   </p>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => deleteSession(confirmDelete)}
+                      className="flex-1 p-3 rounded-xl bg-danger text-white font-bold"
+                    >
+                      Delete
+                    </button>
+                    <button
+                      onClick={() => setConfirmDelete(null)}
+                      className="px-4 p-3 rounded-xl bg-card-border text-muted font-semibold"
+                    >
+                      Cancel
+                    </button>
+                  </div>
                 </div>
-                <div className="text-accent-orange text-xs font-medium">
-                  View
-                </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+            )}
+          </>
         )}
       </div>
+    </div>
+  );
+}
+
+function SwipeableSession({
+  session,
+  onDelete,
+}: {
+  session: WorkoutSession;
+  onDelete: () => void;
+}) {
+  const [offset, setOffset] = useState(0);
+  const [swiping, setSwiping] = useState(false);
+  const startX = useRef(0);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    startX.current = e.touches[0].clientX;
+    setSwiping(true);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!swiping) return;
+    const diff = e.touches[0].clientX - startX.current;
+    if (diff < 0) {
+      setOffset(Math.max(diff, -80));
+    } else {
+      setOffset(0);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setSwiping(false);
+    if (offset < -40) {
+      setOffset(-80);
+    } else {
+      setOffset(0);
+    }
+  };
+
+  return (
+    <div className="relative overflow-hidden rounded-xl">
+      {/* Delete action behind */}
+      <div className="absolute inset-y-0 right-0 flex items-center">
+        <button
+          onClick={onDelete}
+          className="h-full w-20 bg-danger flex items-center justify-center gap-1"
+        >
+          <Trash2 className="w-4 h-4 text-white" />
+          <span className="text-white text-xs font-semibold">Delete</span>
+        </button>
+      </div>
+
+      {/* Foreground */}
+      <Link
+        href={`/workout/history?id=${session.id}`}
+        className="relative block p-3 bg-card border border-card-border rounded-xl flex items-center justify-between"
+        style={{
+          transform: `translateX(${offset}px)`,
+          transition: swiping ? "none" : "transform 0.2s ease-out",
+        }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div>
+          <p className="font-semibold text-sm">{session.name}</p>
+          <p className="text-xs text-muted">
+            {new Date(session.date).toLocaleDateString("en-US", {
+              weekday: "short",
+              month: "short",
+              day: "numeric",
+            })}
+            {session.duration && ` · ${session.duration} min`}
+          </p>
+        </div>
+        <div className="text-accent-orange text-xs font-medium">View</div>
+      </Link>
     </div>
   );
 }
