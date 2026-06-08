@@ -147,4 +147,13 @@ db.version(3).stores({
   bodyWeights: "id, date",
 });
 
+db.version(4).stores({
+  exercises: "id, name, category, muscleGroup",
+  sessions: "id, date, completed",
+  sets: "id, sessionId, exerciseId, exerciseName, timestamp",
+  chatMessages: "id, timestamp",
+  templates: "id, day",
+  bodyWeights: "id, date",
+});
+
 export { db };

@@ -562,11 +562,16 @@ export default function WorkoutPage() {
 
   // ====== EDIT SET MODAL ======
   const editModal = editingSet && (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60">
-      <div className="w-full max-w-md p-4 rounded-t-2xl bg-card border-t border-card-border space-y-3 animate-in slide-in-from-bottom">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) cancelEditSet();
+      }}
+    >
+      <div className="w-full max-w-sm p-4 rounded-2xl bg-card border border-card-border space-y-3">
         <div className="flex items-center justify-between">
           <p className="font-bold text-sm">Edit Set #{editingSet.setNumber}</p>
-          <button onClick={cancelEditSet}>
+          <button onClick={cancelEditSet} className="p-1">
             <X className="w-5 h-5 text-muted" />
           </button>
         </div>
@@ -581,7 +586,6 @@ export default function WorkoutPage() {
               value={editWeight}
               onChange={(e) => setEditWeight(e.target.value)}
               className="w-full p-2 rounded-lg bg-background border border-card-border text-center font-bold text-lg focus:outline-none focus:border-accent-orange"
-              autoFocus
             />
           </div>
           <div>
@@ -863,7 +867,7 @@ export default function WorkoutPage() {
             </div>
             <div className="text-right">
               <span className="text-xs text-muted">
-                Set {activeEp.currentSetIndex + 1} /{" "}
+                Set {(groupedSets[activeEp.exerciseName]?.length || 0) + 1} /{" "}
                 {activeEp.templateSets.length}
               </span>
               {activeEp.templateSets[activeEp.currentSetIndex] && (
@@ -975,9 +979,8 @@ export default function WorkoutPage() {
                 );
                 const ep = queueIdx >= 0 ? exerciseQueue[queueIdx] : null;
                 const isActive = queueIdx === activeExerciseIdx;
-                const isDone =
-                  ep && ep.currentSetIndex >= ep.templateSets.length;
                 const logged = groupedSets[ex.name] || [];
+                const isDone = logged.length >= ex.sets.length;
 
                 return (
                   <div
@@ -1013,7 +1016,7 @@ export default function WorkoutPage() {
                           </span>
                         </div>
                         <span className="text-[10px] text-muted">
-                          {ep ? ep.currentSetIndex : 0}/{ex.sets.length} sets
+                          {logged.length}/{ex.sets.length} sets
                         </span>
                       </div>
                       <div className="flex gap-2 mt-1 flex-wrap">
@@ -1022,7 +1025,7 @@ export default function WorkoutPage() {
                             key={i}
                             className={cn(
                               "text-[10px] px-1.5 py-0.5 rounded",
-                              ep && i < ep.currentSetIndex
+                              i < logged.length
                                 ? "bg-success/20 text-success"
                                 : "bg-card-border/50 text-muted"
                             )}
