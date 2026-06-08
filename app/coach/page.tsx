@@ -188,17 +188,17 @@ function CoachContent() {
       const updated = [card, ...insights.filter((i) => i.mode !== mode)];
       saveInsights(updated);
     } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : "Check your API key.";
+      const message = error instanceof Error ? error.message : "Could not reach AI coach. Check your connection.";
       const errorCard: InsightCard = {
         id: `error-${Date.now()}`,
-        mode,
-        title: "Error",
-        content: `Failed to generate insight: ${message}`,
+        mode: "error",
+        title: "Coach Unavailable",
+        content: message,
         timestamp: new Date().toISOString(),
       };
       setInsights((prev) => [
         errorCard,
-        ...prev.filter((i) => i.mode !== mode),
+        ...prev.filter((i) => i.mode !== "error"),
       ]);
     } finally {
       setLoading(null);
@@ -489,26 +489,32 @@ function InsightCardView({ insight }: { insight: InsightCard }) {
     post_workout: Zap,
     weekly: Calendar,
     progression: TrendingUp,
+    error: Shield,
   };
   const colors: Record<string, string> = {
     post_workout: "text-accent-orange",
     weekly: "text-accent-blue",
     progression: "text-success",
+    error: "text-danger",
   };
   const Icon = icons[insight.mode] || Bot;
   const color = colors[insight.mode] || "text-muted";
+  const isError = insight.mode === "error";
 
   const timeAgo = getTimeAgo(insight.timestamp);
 
   return (
-    <div className="rounded-xl bg-card border border-card-border overflow-hidden">
+    <div className={cn(
+      "rounded-xl border overflow-hidden",
+      isError ? "bg-danger/5 border-danger/20" : "bg-card border-card-border"
+    )}>
       <button
         onClick={() => setExpanded(!expanded)}
         className="w-full p-3 flex items-center justify-between"
       >
         <div className="flex items-center gap-2">
           <Icon className={cn("w-4 h-4", color)} />
-          <span className="font-semibold text-sm">{insight.title}</span>
+          <span className={cn("font-semibold text-sm", isError && "text-danger")}>{insight.title}</span>
           <span className="text-[10px] text-muted">{timeAgo}</span>
         </div>
         {expanded ? (

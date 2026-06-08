@@ -147,10 +147,29 @@ export async function POST(req: NextRequest) {
     });
   } catch (error: unknown) {
     console.error("Chat API error:", error);
-    const message = error instanceof Error ? error.message : "Failed to get response";
+
+    // Check for Anthropic API-specific errors
+    const errObj = error as { status?: number; message?: string; error?: { type?: string; message?: string } };
+    const status = errObj.status || 500;
+    let message = "Failed to get response from AI coach.";
+
+    if (status === 400 && errObj.error?.type === "invalid_request_error") {
+      message = "Invalid request. Please try again.";
+    } else if (status === 401) {
+      message = "API key is invalid. Check your ANTHROPIC_API_KEY in settings.";
+    } else if (status === 403 || (errObj.message && errObj.message.includes("credit balance"))) {
+      message = "AI coach is temporarily unavailable — API credits are depleted. Your workout was saved successfully.";
+    } else if (status === 429) {
+      message = "Too many requests. Please wait a moment and try again.";
+    } else if (status === 529 || status === 503) {
+      message = "AI service is temporarily overloaded. Try again in a few minutes.";
+    } else if (error instanceof Error) {
+      message = error.message;
+    }
+
     return NextResponse.json(
       { error: message },
-      { status: 500 }
+      { status }
     );
   }
 }
