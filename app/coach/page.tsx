@@ -75,9 +75,10 @@ function CoachContent() {
 
       if (sessions.length > 0) {
         const firstDate = new Date(sessions[0].date);
+        // Count first day as day 1, not day 0
         const days = Math.floor(
           (Date.now() - firstDate.getTime()) / (1000 * 60 * 60 * 24)
-        );
+        ) + 1;
         setDaysTracking(days);
         setIsMonitoring(days < MONITORING_DAYS);
       }
@@ -242,9 +243,13 @@ function CoachContent() {
   };
 
   const daysRemaining = Math.max(0, MONITORING_DAYS - daysTracking);
+  // Progress combines days (70% weight) and sessions (30% weight)
+  // Target: ~12 sessions in 30 days (M/W/F lifting = 12 sessions/month)
+  const dayProgress = daysTracking / MONITORING_DAYS;
+  const sessionProgress = Math.min(1, sessionCount / 12);
   const monitoringProgress = Math.min(
     100,
-    Math.round((daysTracking / MONITORING_DAYS) * 100)
+    Math.round((dayProgress * 0.7 + sessionProgress * 0.3) * 100)
   );
 
   const monitoringButtons = [
