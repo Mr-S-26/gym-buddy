@@ -126,25 +126,75 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Skill Work",
-        duration: "60 min",
+        title: "Block 0 — Form Shooting",
+        duration: "15 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "One-Hand Form (Under Rim)",
             category: "skill",
-            notes: "100 MAKES within 10ft. Groove mechanics — elbow in, follow through, arc.",
+            notes: "~3ft out, shooting hand only. Wrist snap, hold follow-through. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Pull-up Jumper Footwork",
+            name: "Two-Hand Close Form",
             category: "skill",
-            notes: "Kobe sequence: triple-threat → jab → drive-by → balanced peak-release pull-up. Blocked practice.",
+            notes: "~6-8ft, normal grip, no jump. Groove the release. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 each spot", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each spot", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Four-Way Form Shooting",
+            category: "skill",
+            notes: "~10ft. 5 makes each: front, left 45, right 45, step further back. ~50 makes total.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block A — Kobe Pull-Up Footwork",
+        duration: "35 min",
+        exercises: [
+          {
+            name: "Triple-Threat Jab Freeze",
+            category: "skill",
+            notes: "Catch triple threat, hard jab at defender's front foot, rip back, rise into jumper. Blocked practice. 10 makes each elbow.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "One-Dribble Pull-Up",
+            category: "skill",
+            notes: "Start wing inside arc ~17ft. Jab → 1 hard dribble toward middle → plant inside foot, gather, rise on 1-2 step. Blocked. 8 makes each: L wing, R wing, L elbow, R elbow.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Go-To + Counter",
+            category: "skill",
+            notes: "Go-to: jab → cross to middle → pull-up. Counter: same setup → spin or step-back. Blocked. 10 go-to + 10 counter from fav spot, then alternate randomly.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
@@ -168,49 +218,122 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
     totalMinutes: 120,
     sections: [
       {
-        title: "Ball Handling",
+        title: "Block E — Ball Handling",
         duration: "12 min",
         exercises: [
           {
-            name: "Two-Ball Dribbling",
+            name: "Two-Ball Pound Low",
             category: "skill",
-            notes: "Pound, crossover, in-out — stationary then full-court. Low handle, eyes up.",
+            notes: "Below knee, eyes up. 3x30s. Blocked practice.",
             sets: [
-              { setNumber: 1, targetReps: "6 min", targetWeight: 0, restSeconds: 30 },
-              { setNumber: 2, targetReps: "6 min", targetWeight: 0, restSeconds: 30 },
+              { setNumber: 1, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 2, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 3, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+            ],
+          },
+          {
+            name: "Two-Ball Crossover",
+            category: "skill",
+            notes: "3x20 reps. Tight and snappy crosses.",
+            sets: [
+              { setNumber: 1, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 2, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 3, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+            ],
+          },
+          {
+            name: "Single-Ball Combo",
+            category: "skill",
+            notes: "Cross/between/behind combos. 2 min continuous, full speed.",
+            sets: [
+              { setNumber: 1, targetReps: "2 min", targetWeight: 0, restSeconds: 30 },
+            ],
+          },
+          {
+            name: "Attack Series",
+            category: "skill",
+            notes: "Hesi→go, cross→go, between→pull-up. 5 each, each ends in shot/finish.",
+            sets: [
+              { setNumber: 1, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Full-Court Speed Handle",
+            category: "skill",
+            notes: "4 lengths, crossover every 2 steps. Game speed.",
+            sets: [
+              { setNumber: 1, targetReps: "4 lengths", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
       },
       {
-        title: "Melo Scoring Package",
+        title: "Block D — Melo Paint/Post Package",
         duration: "30 min",
         exercises: [
           {
-            name: "Jab Series (Triple Threat)",
+            name: "Jab Series — Jab & Shoot",
             category: "skill",
-            notes: "Jab → pull-up / jab → rip-through drive / jab → step-back. Both sides.",
+            notes: "Face-up, right slot/wing. Jab → shoot (defender gives space). Blocked. 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each move", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each move", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Mid-Post Turnaround / Fadeaway",
+            name: "Jab Series — Rip-Through Drive",
             category: "skill",
-            notes: "Catch mid-post → turnaround jumper + fadeaway. Both shoulders. Contact finish.",
+            notes: "Jab → rip-through one-dribble pull-up/finish (defender bites). 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Up-and-Under + Contact Finishes",
+            name: "Jab Series — Double Jab Drive",
             category: "skill",
-            notes: "Pump fake → up-and-under. Two-foot gather, absorb contact, elbow shield finish.",
+            notes: "Jab → jab → drive (defender doesn't react). 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Mid-Post Turnaround",
+            category: "skill",
+            notes: "Right + left block. Drop step baseline, turn over inside shoulder, rise. 8 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Mid-Post Fadeaway",
+            category: "skill",
+            notes: "Turn to middle, fade slightly, square in air. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Up-and-Under",
+            category: "skill",
+            notes: "Shot fake → step through under defender → finish. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Contact Finishes",
+            category: "skill",
+            notes: "Two-foot gather, jump into contact, shield with off-elbow, finish high off glass. 10 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -231,19 +354,31 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Catch-and-Shoot",
+        title: "Block C — Catch-and-Shoot 5-Spot",
         duration: "25 min",
         exercises: [
           {
-            name: "Catch-and-Shoot 3s (5 Spots)",
+            name: "Catch-and-Shoot (5 Spots)",
             category: "skill",
-            notes: "60 makes total. 1 set per spot: L corner, L wing, top, R wing, R corner.",
+            notes: "Catch on hop or 1-2 into shot, square, rise. Blocked. Make 6/10 (60%) each spot. L corner, L wing, top, R wing, R corner.",
             sets: [
-              { setNumber: 1, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Off-the-Move Catch-and-Shoot",
+            category: "skill",
+            notes: "Start under rim, sprint to spot, plant, catch, shoot. Inside foot down first, square fast. 5 makes per spot.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -364,30 +499,110 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Skill Work",
-        duration: "55 min",
+        title: "Block 0 — Form Shooting",
+        duration: "15 min",
         exercises: [
           {
-            name: "3-Point Shooting (5 Spots)",
+            name: "One-Hand Form (Under Rim)",
             category: "skill",
-            notes: "Make-based: 6/10 each spot minimum. L corner, L wing, top, R wing, R corner.",
+            notes: "~3ft out, shooting hand only. Wrist snap, hold follow-through. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Off-Dribble Pull-ups",
+            name: "Two-Hand Close Form",
             category: "skill",
-            notes: "1-2 dribbles → pull-up jumper. Both directions. Game speed.",
+            notes: "~6-8ft, normal grip, no jump. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
+          {
+            name: "Four-Way Form Shooting",
+            category: "skill",
+            notes: "~10ft. 5 makes each: front, left 45, right 45, step further back. ~50 makes total.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block B — Off-Dribble Pull-Ups & Step-Backs",
+        duration: "25 min",
+        exercises: [
+          {
+            name: "Stationary Pull-Up",
+            category: "skill",
+            notes: "Right wing, one dribble in, gather, rise, shoot. Blocked. 8 makes per wing + top = 24.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Drive → Pull-Up",
+            category: "skill",
+            notes: "Start at 3-pt line, 2 hard dribbles toward elbow, plant, gather, pull up. 8 makes each side.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Drive → Hesi → Step-Back",
+            category: "skill",
+            notes: "1-2 hard dribbles toward paint, hesi at elbow, push off inside foot, step back behind arc, gather and rise. Cue: hesi=freeze, step-back=separation, base=accuracy. 6 per wing + 6 top = 18.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Crossover Step-Back Counter",
+            category: "skill",
+            notes: "Drive → between-legs or cross → step-back. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block C — Catch-and-Shoot 5-Spot",
+        duration: "15 min",
+        exercises: [
+          {
+            name: "Catch-and-Shoot (5 Spots)",
+            category: "skill",
+            notes: "Catch on hop or 1-2 into shot, square, rise. Blocked. Make 6/10 (60%) each spot.",
+            sets: [
+              { setNumber: 1, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Cooldown",
+        duration: "5 min",
+        exercises: [
           {
             name: "Free Throws",
             category: "skill",
@@ -449,61 +664,74 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Heavy Shooting Session (300+ makes)",
+        title: "Block F — Heavy Makes (300-500)",
         duration: "75 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "Form Opener (Block 0)",
             category: "skill",
-            notes: "100 makes within 10ft. Perfect mechanics every rep.",
+            notes: "One-hand 25 + two-hand 25 + four-way 50 = 100 makes. Same Block 0 sequence.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Mid-Range Game Shots",
+            name: "Mid-Range Circuit (5 Spots)",
             category: "skill",
-            notes: "Elbow, baseline, free-throw line. Off-catch and off-dribble. 100 makes.",
+            notes: "Both elbows, both wings, top of key. Blocked. 8 makes each spot = 40 total.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "3-Point Shooting (5 Spots)",
+            name: "3-Point Circuit (5 Spots x2 Laps)",
             category: "skill",
-            notes: "100+ makes. 1 set per spot: L corner, L wing, top, R wing, R corner.",
+            notes: "5 spots, make 6 each = 30 per lap, 2 laps = 60 total. Blocked practice.",
             sets: [
-              { setNumber: 1, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Scoring Moves vs. Defender",
+            name: "Free Throws (Fatigued)",
             category: "skill",
-            notes: "One go-to move + one counter. Blocked practice this phase.",
+            notes: "Sets of 10. Do 5 push-ups before each set to simulate fatigue. 40 total makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 min", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 min", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
-        ],
-      },
-      {
-        title: "Cooldown",
-        duration: "8 min",
-        exercises: [
           {
-            name: "Free Throws",
+            name: "Off-Dribble Integration",
             category: "skill",
-            notes: "Log makes per set. Simulate end-of-game.",
+            notes: "Step-back + pull-up mixed/random. 30 makes total. Blocked practice.",
             sets: [
-              { setNumber: 1, targetReps: "15", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "15", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Scoring vs. Defender",
+            category: "skill",
+            notes: "Go-to + counter + one Melo post move. 10-15 possessions. Blocked practice.",
+            sets: [
+              { setNumber: 1, targetReps: "10 possessions", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -576,11 +804,13 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         duration: "60 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "Light Form Shooting",
             category: "skill",
-            notes: "Light session — 50 makes. Keep the touch alive before games.",
+            notes: "50 makes total. One-hand 15 + two-hand 15 + four-way 20. Keep touch alive before games.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
@@ -731,25 +961,75 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Skill Work",
-        duration: "50 min",
+        title: "Block 0 — Form Shooting",
+        duration: "15 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "One-Hand Form (Under Rim)",
             category: "skill",
-            notes: "100 makes within 10ft.",
+            notes: "~3ft out, shooting hand only. Wrist snap, hold follow-through. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Pull-up Jumper Footwork",
+            name: "Two-Hand Close Form",
             category: "skill",
-            notes: "Same Kobe sequence but now add the counter move (drop-step/spin).",
+            notes: "~6-8ft, normal grip, no jump. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 each spot", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each spot", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Four-Way Form Shooting",
+            category: "skill",
+            notes: "~10ft. 5 makes each: front, left 45, right 45, step further back. ~50 makes total.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block A — Kobe Pull-Up Footwork",
+        duration: "25 min",
+        exercises: [
+          {
+            name: "Triple-Threat Jab Freeze",
+            category: "skill",
+            notes: "Hard jab, rip back, rise into jumper. Mix blocked + game-speed. Add counter (drop-step/spin). 10 makes each elbow.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "One-Dribble Pull-Up",
+            category: "skill",
+            notes: "Jab → 1 hard dribble → plant inside foot, gather, rise. Mix blocked + game-speed. Add token defender. 8 makes x 4 spots.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Go-To + Counter (Timed)",
+            category: "skill",
+            notes: "Go-to: jab → cross → pull-up. Counter: spin/step-back. Mix blocked + game-speed. Alternate randomly. 10 go-to + 10 counter.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
@@ -773,49 +1053,122 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
     totalMinutes: 120,
     sections: [
       {
-        title: "Ball Handling",
+        title: "Block E — Ball Handling",
         duration: "12 min",
         exercises: [
           {
-            name: "Two-Ball Dribbling",
+            name: "Two-Ball Pound Low",
             category: "skill",
-            notes: "Full-court at speed. Add combo moves: cross → hesi → step-back.",
+            notes: "Below knee, eyes up. 3x30s. Add speed from P1.",
             sets: [
-              { setNumber: 1, targetReps: "6 min", targetWeight: 0, restSeconds: 30 },
-              { setNumber: 2, targetReps: "6 min", targetWeight: 0, restSeconds: 30 },
+              { setNumber: 1, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 2, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 3, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+            ],
+          },
+          {
+            name: "Two-Ball Crossover",
+            category: "skill",
+            notes: "3x20 reps. Tight and snappy. Add combo moves: cross → hesi → step-back.",
+            sets: [
+              { setNumber: 1, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 2, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 3, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+            ],
+          },
+          {
+            name: "Single-Ball Combo",
+            category: "skill",
+            notes: "Cross/between/behind combos. 2 min continuous, full speed. Game-speed moves.",
+            sets: [
+              { setNumber: 1, targetReps: "2 min", targetWeight: 0, restSeconds: 30 },
+            ],
+          },
+          {
+            name: "Attack Series",
+            category: "skill",
+            notes: "Hesi→go, cross→go, between→pull-up. 5 each, each ends in shot/finish. Add deception.",
+            sets: [
+              { setNumber: 1, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Full-Court Speed Handle",
+            category: "skill",
+            notes: "4 lengths, crossover every 2 steps. Full-court at speed.",
+            sets: [
+              { setNumber: 1, targetReps: "4 lengths", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
       },
       {
-        title: "Melo Scoring Package",
+        title: "Block D — Melo Paint/Post Package",
         duration: "30 min",
         exercises: [
           {
-            name: "Jab Series (Triple Threat)",
+            name: "Jab Series — Jab & Shoot",
             category: "skill",
-            notes: "Same as P1. Both sides. Add speed + deception.",
+            notes: "Face-up, right slot/wing. Jab → shoot. Mix blocked + game-speed. Add deception. 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each move", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each move", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Mid-Post Turnaround / Fadeaway",
+            name: "Jab Series — Rip-Through Drive",
             category: "skill",
-            notes: "Both shoulders. Add pump-fake counter.",
+            notes: "Jab → rip-through one-dribble pull-up/finish. Mix blocked + game-speed. 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Up-and-Under + Contact Finishes",
+            name: "Jab Series — Double Jab Drive",
             category: "skill",
-            notes: "Increase contact intensity. Two-foot gather, elbow shield.",
+            notes: "Jab → jab → drive. Add speed + deception. 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Mid-Post Turnaround",
+            category: "skill",
+            notes: "Right + left block. Drop step baseline, turn over inside shoulder, rise. Add pump-fake counter. 8 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Mid-Post Fadeaway",
+            category: "skill",
+            notes: "Turn to middle, fade slightly, square in air. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Up-and-Under",
+            category: "skill",
+            notes: "Shot fake → step through under defender → finish. Increase contact intensity. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Contact Finishes",
+            category: "skill",
+            notes: "Two-foot gather, jump into contact, shield with off-elbow, finish high off glass. Increase intensity. 10 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -837,19 +1190,31 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Catch-and-Shoot",
+        title: "Block C — Catch-and-Shoot 5-Spot",
         duration: "25 min",
         exercises: [
           {
-            name: "Catch-and-Shoot 3s (5 Spots)",
+            name: "Catch-and-Shoot (5 Spots)",
             category: "skill",
-            notes: "Same 60 makes. 1 set per spot. Start mixing in off-movement catches.",
+            notes: "Catch on hop or 1-2 into shot. Mix blocked + off-movement catches. Make 6/10 each spot.",
             sets: [
-              { setNumber: 1, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Off-the-Move Catch-and-Shoot",
+            category: "skill",
+            notes: "Sprint to spot, plant, catch, shoot. Inside foot down first, square fast. Add fatigue timer. 5 makes per spot.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -981,30 +1346,110 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Skill Work",
-        duration: "50 min",
+        title: "Block 0 — Form Shooting",
+        duration: "15 min",
         exercises: [
           {
-            name: "3-Point Shooting (5 Spots)",
+            name: "One-Hand Form (Under Rim)",
             category: "skill",
-            notes: "Start mixing random/game-speed. L corner, L wing, top, R wing, R corner.",
+            notes: "~3ft out, shooting hand only. Wrist snap, hold follow-through. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Off-Dribble Pull-ups",
+            name: "Two-Hand Close Form",
             category: "skill",
-            notes: "Game speed. Both directions.",
+            notes: "~6-8ft, normal grip, no jump. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
+          {
+            name: "Four-Way Form Shooting",
+            category: "skill",
+            notes: "~10ft. 5 makes each: front, left 45, right 45, step further back. ~50 makes total.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block B — Off-Dribble Pull-Ups & Step-Backs",
+        duration: "20 min",
+        exercises: [
+          {
+            name: "Stationary Pull-Up",
+            category: "skill",
+            notes: "One dribble in, gather, rise. Mix blocked + game-speed. 8 makes per wing + top = 24.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Drive → Pull-Up",
+            category: "skill",
+            notes: "2 hard dribbles toward elbow, plant, gather, pull up. Game-speed. 8 makes each side.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Drive → Hesi → Step-Back",
+            category: "skill",
+            notes: "Hesi at elbow, step back behind arc. Add fatigue timer: make 10 step-back 3s in 4:00. 6 per wing + 6 top = 18.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Crossover Step-Back Counter",
+            category: "skill",
+            notes: "Drive → between-legs or cross → step-back. Add token defender. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block C — Catch-and-Shoot 5-Spot",
+        duration: "10 min",
+        exercises: [
+          {
+            name: "Catch-and-Shoot (5 Spots)",
+            category: "skill",
+            notes: "Mix blocked + game-speed. Off-movement catches. Make 6/10 each spot.",
+            sets: [
+              { setNumber: 1, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Cooldown",
+        duration: "5 min",
+        exercises: [
           {
             name: "Free Throws",
             category: "skill",
@@ -1066,61 +1511,74 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Heavy Shooting Session (400 makes)",
+        title: "Block F — Heavy Makes (400)",
         duration: "75 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "Form Opener (Block 0)",
             category: "skill",
-            notes: "100 makes within 10ft.",
+            notes: "One-hand 25 + two-hand 25 + four-way 50 = 100 makes. Same Block 0 sequence.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Mid-Range Game Shots",
+            name: "Mid-Range Circuit (5 Spots)",
             category: "skill",
-            notes: "100 makes. Mix blocked + random/game-speed (half and half).",
+            notes: "Both elbows, both wings, top. Mix blocked + game-speed (half and half). 8 makes each = 40.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "3-Point Shooting (5 Spots)",
+            name: "3-Point Circuit (5 Spots x2 Laps)",
             category: "skill",
-            notes: "100+ makes. Half random/game-speed: timed drill (25 threes in 3:30), off-screen.",
+            notes: "Make 6 each spot per lap, 2 laps = 60. Half timed: 25 threes in 3:30, off-screen.",
             sets: [
-              { setNumber: 1, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Scoring Moves vs. Defender",
+            name: "Free Throws (Fatigued)",
             category: "skill",
-            notes: "Go-to + counter. Add game-speed randomness.",
+            notes: "Sets of 10. Do 5 push-ups before each set to simulate fatigue. 40 total makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 min", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 min", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
-        ],
-      },
-      {
-        title: "Cooldown",
-        duration: "8 min",
-        exercises: [
           {
-            name: "Free Throws",
+            name: "Off-Dribble Integration",
             category: "skill",
-            notes: "Log makes per set.",
+            notes: "Step-back + pull-up mixed/random. Add game-speed randomness. 30 makes total.",
             sets: [
-              { setNumber: 1, targetReps: "15", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "15", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Scoring vs. Defender",
+            category: "skill",
+            notes: "Go-to + counter + one Melo post move. Add game-speed randomness. 10-15 possessions.",
+            sets: [
+              { setNumber: 1, targetReps: "10 possessions", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -1204,11 +1662,13 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         duration: "55 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "Light Form Shooting",
             category: "skill",
-            notes: "50 makes. Touch alive before games.",
+            notes: "50 makes total. One-hand 15 + two-hand 15 + four-way 20. Keep touch alive before games.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
@@ -1360,25 +1820,75 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Skill Work",
-        duration: "45 min",
+        title: "Block 0 — Form Shooting",
+        duration: "12 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "One-Hand Form (Under Rim)",
             category: "skill",
-            notes: "100 makes.",
+            notes: "~3ft out, shooting hand only. Wrist snap, hold follow-through. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Pull-up Jumper Footwork",
+            name: "Two-Hand Close Form",
             category: "skill",
-            notes: "Go-to + counter at game speed. Random practice dominates now.",
+            notes: "~6-8ft, normal grip, no jump. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 each spot", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each spot", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Four-Way Form Shooting",
+            category: "skill",
+            notes: "~10ft. 5 makes each: front, left 45, right 45, step further back. ~50 makes total.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block A — Kobe Pull-Up Footwork",
+        duration: "23 min",
+        exercises: [
+          {
+            name: "Triple-Threat Jab Freeze",
+            category: "skill",
+            notes: "Hard jab, rip back, rise. Random/game-speed ≥70%. Live defender. 10 makes each elbow.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "One-Dribble Pull-Up",
+            category: "skill",
+            notes: "Jab → 1 hard dribble → plant, gather, rise. Random angles, live defender. 8 makes x 4 spots.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Go-To + Counter (Random/Live)",
+            category: "skill",
+            notes: "Go-to: jab → cross → pull-up. Counter: spin/step-back. Random practice dominates. Live defender. 10 go-to + 10 counter.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
@@ -1402,46 +1912,110 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
     totalMinutes: 120,
     sections: [
       {
-        title: "Ball Handling",
+        title: "Block E — Ball Handling",
         duration: "12 min",
         exercises: [
           {
-            name: "Two-Ball Dribbling",
+            name: "Two-Ball Pound Low",
             category: "skill",
-            notes: "Full-court at max speed. Game-speed combos.",
+            notes: "Below knee, eyes up. 3x30s. Max speed.",
             sets: [
-              { setNumber: 1, targetReps: "6 min", targetWeight: 0, restSeconds: 30 },
-              { setNumber: 2, targetReps: "6 min", targetWeight: 0, restSeconds: 30 },
+              { setNumber: 1, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 2, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 3, targetReps: "30s", targetWeight: 0, restSeconds: 15 },
+            ],
+          },
+          {
+            name: "Two-Ball Crossover",
+            category: "skill",
+            notes: "3x20 reps. Game-speed combos. Full-court at max speed.",
+            sets: [
+              { setNumber: 1, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 2, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+              { setNumber: 3, targetReps: "20", targetWeight: 0, restSeconds: 15 },
+            ],
+          },
+          {
+            name: "Single-Ball Combo",
+            category: "skill",
+            notes: "Cross/between/behind combos. 2 min continuous, max speed, game reads.",
+            sets: [
+              { setNumber: 1, targetReps: "2 min", targetWeight: 0, restSeconds: 30 },
+            ],
+          },
+          {
+            name: "Attack Series",
+            category: "skill",
+            notes: "Hesi→go, cross→go, between→pull-up. 5 each, each ends in shot/finish. Random order, live defender.",
+            sets: [
+              { setNumber: 1, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 reps", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Full-Court Speed Handle",
+            category: "skill",
+            notes: "4 lengths, crossover every 2 steps. Max speed, game pressure.",
+            sets: [
+              { setNumber: 1, targetReps: "4 lengths", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
       },
       {
-        title: "Scoring Package (Game Speed)",
+        title: "Block D — Melo Scoring (Game Speed)",
         duration: "30 min",
         exercises: [
           {
-            name: "Jab Series (Triple Threat)",
+            name: "Jab Series — Jab & Shoot",
             category: "skill",
-            notes: "Full speed. Random order — simulate reads. Both sides.",
+            notes: "Full speed, random order — simulate reads. Both sides. Live defender. 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each move", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each move", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Mid-Post Turnaround / Fadeaway",
+            name: "Jab Series — Rip-Through Drive",
             category: "skill",
-            notes: "Full package with counters. Game speed.",
+            notes: "Jab → rip-through drive/finish. Random/game-speed ≥70%. Live defender. 8 makes each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 each side", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Scoring Moves vs. Live Defense",
+            name: "Jab Series — Double Jab Drive",
             category: "skill",
-            notes: "Full scoring packages against live defender. 1-on-1 from triple threat.",
+            notes: "Jab → jab → drive. Random reads, full speed. 8 makes each side.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Mid-Post Turnaround",
+            category: "skill",
+            notes: "Right + left block. Full package with counters. Game speed. 8 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Mid-Post Fadeaway",
+            category: "skill",
+            notes: "Turn to middle, fade, square in air. Game speed. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Scoring vs. Live Defense",
+            category: "skill",
+            notes: "Full scoring packages vs live defender. 1-on-1 from triple threat + off ball screen. Random reads. 10 possessions each side.",
             sets: [
               { setNumber: 1, targetReps: "10 possessions", targetWeight: 0, restSeconds: 0 },
               { setNumber: 2, targetReps: "10 possessions", targetWeight: 0, restSeconds: 0 },
@@ -1466,19 +2040,31 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Catch-and-Shoot",
+        title: "Block C — Catch-and-Shoot 5-Spot",
         duration: "25 min",
         exercises: [
           {
-            name: "Catch-and-Shoot 3s (5 Spots)",
+            name: "Catch-and-Shoot (5 Spots)",
             category: "skill",
-            notes: "Game-speed catches. Off-movement, off-screen. 1 set per spot.",
+            notes: "Game-speed catches. Off-movement, off-screen, contested. Make 6/10 each spot.",
             sets: [
-              { setNumber: 1, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "12 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Off-the-Move Catch-and-Shoot",
+            category: "skill",
+            notes: "Sprint to spot, plant, catch, shoot. Timed drills, game-speed ≥70%. 5 makes per spot.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -1609,30 +2195,110 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Skill Work",
-        duration: "50 min",
+        title: "Block 0 — Form Shooting",
+        duration: "12 min",
         exercises: [
           {
-            name: "3-Point Shooting (5 Spots)",
+            name: "One-Hand Form (Under Rim)",
             category: "skill",
-            notes: "Random/game-speed dominates. Off-screen, off-dribble, contested. 1 set per spot.",
+            notes: "~3ft out, shooting hand only. Wrist snap, hold follow-through. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Off-Dribble Pull-ups",
+            name: "Two-Hand Close Form",
             category: "skill",
-            notes: "Game speed. Random angles.",
+            notes: "~6-8ft, normal grip, no jump. 25 makes.",
             sets: [
-              { setNumber: 1, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
+          {
+            name: "Four-Way Form Shooting",
+            category: "skill",
+            notes: "~10ft. 5 makes each: front, left 45, right 45, step further back. ~50 makes total.",
+            sets: [
+              { setNumber: 1, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "5 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block B — Off-Dribble Pull-Ups & Step-Backs",
+        duration: "20 min",
+        exercises: [
+          {
+            name: "Stationary Pull-Up",
+            category: "skill",
+            notes: "One dribble in, gather, rise. Random/game-speed ≥70%, contested. 8 makes per wing + top = 24.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Drive → Pull-Up",
+            category: "skill",
+            notes: "2 hard dribbles, plant, gather, pull up. Random angles, live defender. 8 makes each side.",
+            sets: [
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Drive → Hesi → Step-Back",
+            category: "skill",
+            notes: "Hesi at elbow, step back behind arc. Timed drills, random/game-speed ≥70%. 6 per wing + 6 top = 18.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Crossover Step-Back Counter",
+            category: "skill",
+            notes: "Drive → between-legs or cross → step-back. Live defender. 6 makes per side.",
+            sets: [
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Block C — Catch-and-Shoot 5-Spot",
+        duration: "13 min",
+        exercises: [
+          {
+            name: "Catch-and-Shoot (5 Spots)",
+            category: "skill",
+            notes: "Random/game-speed ≥70%. Off-screen, off-dribble, contested. Make 6/10 each spot.",
+            sets: [
+              { setNumber: 1, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6/10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Cooldown",
+        duration: "5 min",
+        exercises: [
           {
             name: "Free Throws",
             category: "skill",
@@ -1694,61 +2360,74 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         ],
       },
       {
-        title: "Heavy Shooting Session (400-500 makes)",
+        title: "Block F — Heavy Makes (400-500)",
         duration: "75 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "Form Opener (Block 0)",
             category: "skill",
-            notes: "100 makes.",
+            notes: "One-hand 25 + two-hand 25 + four-way 50 = 100 makes. Same Block 0 sequence.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "25 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Mid-Range Game Shots",
+            name: "Mid-Range Circuit (5 Spots)",
             category: "skill",
-            notes: "100 makes. Random/game-speed ≥70% of reps.",
+            notes: "Both elbows, both wings, top. Random/game-speed ≥70%. 8 makes each = 40.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "8 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "3-Point Shooting (5 Spots)",
+            name: "3-Point Circuit (5 Spots x2 Laps)",
             category: "skill",
-            notes: "150-200 makes. Random ≥70%: timed drills, off-screen, contested. 1 set per spot.",
+            notes: "Make 6 each per lap, 2 laps = 60. Random ≥70%: timed drills, off-screen, contested.",
             sets: [
-              { setNumber: 1, targetReps: "30 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "30 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "30 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 4, targetReps: "30 makes", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 5, targetReps: "30 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 6, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 7, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 8, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 9, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 10, targetReps: "6 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
-            name: "Scoring Moves vs. Live Defense",
+            name: "Free Throws (Fatigued)",
             category: "skill",
-            notes: "Full packages. Random reads. 1-on-1 from triple threat + off ball screen.",
+            notes: "Sets of 10. Do 5 push-ups before each set. 40 total makes.",
+            sets: [
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Off-Dribble Integration",
+            category: "skill",
+            notes: "Step-back + pull-up mixed/random. Game-speed ≥70%. 30 makes total.",
+            sets: [
+              { setNumber: 1, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Scoring vs. Live Defense",
+            category: "skill",
+            notes: "Full packages. Random reads. 1-on-1 from triple threat + off ball screen. One Melo post move. 10-15 possessions.",
             sets: [
               { setNumber: 1, targetReps: "10 possessions", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 possessions", targetWeight: 0, restSeconds: 0 },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Cooldown",
-        duration: "8 min",
-        exercises: [
-          {
-            name: "Free Throws",
-            category: "skill",
-            notes: "Log makes per set.",
-            sets: [
-              { setNumber: 1, targetReps: "15", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "15", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -1804,11 +2483,13 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
         duration: "60 min",
         exercises: [
           {
-            name: "Form Shooting (Close Range)",
+            name: "Light Form Shooting",
             category: "skill",
-            notes: "50 makes. Touch alive before games.",
+            notes: "50 makes total. One-hand 15 + two-hand 15 + four-way 20. Keep touch alive before games.",
             sets: [
-              { setNumber: 1, targetReps: "50 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "15 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
