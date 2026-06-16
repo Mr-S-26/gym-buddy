@@ -1,7 +1,7 @@
 # Gym Buddy - AI-Powered Personal Gym Coach PWA
 
 ## Project Overview
-A personal AI-powered gym coach built as a Progressive Web App (PWA) for mobile use. Tracks workouts for an NBA athlete training program (RPT style, 5 days/week: M/W/F lifting, T/Th court drills), logs sets/reps/weight, and uses Claude AI to analyze performance and suggest progressions after a 30-day monitoring period.
+A personal AI-powered gym coach built as a Progressive Web App (PWA) for mobile use. Tracks workouts for an NBA guard-focused training program (5 days/week: Mon lower body power + skill, Tue skill + conditioning, Wed upper body + skill, Thu skill + CNS primer, Fri full body maintenance + skill). Logs sets/reps/weight for gym exercises and skill drills (shooting makes, ball handling, scoring moves). Uses Claude AI to analyze performance and suggest progressions after a 30-day monitoring period. Guard priorities: relative strength, vertical jump, speed/agility, shooting volume, patellar tendon health.
 
 ## Tech Stack
 - **Framework**: Next.js 16 (App Router) with TypeScript
