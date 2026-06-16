@@ -5,8 +5,9 @@ import { type WorkoutTemplate } from "./db";
 // 5'9" / 76→80–82 kg returning guard · 2 hrs/day × 5 days
 // Phase 1: Foundation (Wk 1-4) → Phase 2: Power Conversion (Wk 5-8) → Phase 3: Expression (Wk 9-12)
 //
-// Placeholder 1RMs: Squat 100kg, Trap-bar DL 135kg, Bench 80kg
-// RDL ≈ 65% trap-bar (88kg), Front squat ≈ 85% back squat (85kg)
+// Estimated 1RMs (from 40kg×5 bench test):
+// Bench 47kg, Squat ~60kg, Trap-bar DL ~80kg
+// RDL ≈ 65% trap-bar (~52kg), Front squat ≈ 85% back squat (~50kg)
 // Adjust after Week 0 testing.
 // ═══════════════════════════════════════════════════════════════════
 
@@ -31,12 +32,12 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "Squat Ramp",
             category: "warmup",
-            notes: "bar×8 → 40kg×5 → 60kg×3 → 72kg×2. Don't skip this.",
+            notes: "bar×8 → 25kg×5 → 35kg×3 → 42kg×2. Don't skip this.",
             sets: [
               { setNumber: 1, targetReps: "8", targetWeight: 20, restSeconds: 60 },
-              { setNumber: 2, targetReps: "5", targetWeight: 40, restSeconds: 90 },
-              { setNumber: 3, targetReps: "3", targetWeight: 60, restSeconds: 90 },
-              { setNumber: 4, targetReps: "2", targetWeight: 72, restSeconds: 120 },
+              { setNumber: 2, targetReps: "5", targetWeight: 25, restSeconds: 90 },
+              { setNumber: 3, targetReps: "3", targetWeight: 35, restSeconds: 90 },
+              { setNumber: 4, targetReps: "2", targetWeight: 42, restSeconds: 120 },
             ],
           },
         ],
@@ -50,10 +51,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "80% 1RM. Tempo: 3-0-X (3s down, explosive up). ~1-2 RIR.",
             sets: [
-              { setNumber: 1, targetReps: "5", targetWeight: 80, restSeconds: 180 },
-              { setNumber: 2, targetReps: "5", targetWeight: 80, restSeconds: 180 },
-              { setNumber: 3, targetReps: "5", targetWeight: 80, restSeconds: 180 },
-              { setNumber: 4, targetReps: "5", targetWeight: 80, restSeconds: 180 },
+              { setNumber: 1, targetReps: "5", targetWeight: 48, restSeconds: 180 },
+              { setNumber: 2, targetReps: "5", targetWeight: 48, restSeconds: 180 },
+              { setNumber: 3, targetReps: "5", targetWeight: 48, restSeconds: 180 },
+              { setNumber: 4, targetReps: "5", targetWeight: 48, restSeconds: 180 },
             ],
           },
           {
@@ -61,9 +62,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Tempo: 2-0-2. Each leg.",
             sets: [
-              { setNumber: 1, targetReps: "8 each", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 2, targetReps: "8 each", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 3, targetReps: "8 each", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 1, targetReps: "8 each", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 2, targetReps: "8 each", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 3, targetReps: "8 each", targetWeight: 10, restSeconds: 90 },
             ],
           },
           {
@@ -71,9 +72,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "~65% trap-bar DL. Tempo: 3-1-2 (3s down, 1s pause, 2s up).",
             sets: [
-              { setNumber: 1, targetReps: "8", targetWeight: 70, restSeconds: 90 },
-              { setNumber: 2, targetReps: "8", targetWeight: 70, restSeconds: 90 },
-              { setNumber: 3, targetReps: "8", targetWeight: 70, restSeconds: 90 },
+              { setNumber: 1, targetReps: "8", targetWeight: 50, restSeconds: 90 },
+              { setNumber: 2, targetReps: "8", targetWeight: 50, restSeconds: 90 },
+              { setNumber: 3, targetReps: "8", targetWeight: 50, restSeconds: 90 },
             ],
           },
         ],
@@ -87,10 +88,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "power",
             notes: "85% 1RM. 3 reps, then IMMEDIATELY do CMJs. Post-activation potentiation.",
             sets: [
-              { setNumber: 1, targetReps: "3", targetWeight: 85, restSeconds: 0 },
-              { setNumber: 2, targetReps: "3", targetWeight: 85, restSeconds: 0 },
-              { setNumber: 3, targetReps: "3", targetWeight: 85, restSeconds: 0 },
-              { setNumber: 4, targetReps: "3", targetWeight: 85, restSeconds: 0 },
+              { setNumber: 1, targetReps: "3", targetWeight: 50, restSeconds: 0 },
+              { setNumber: 2, targetReps: "3", targetWeight: 50, restSeconds: 0 },
+              { setNumber: 3, targetReps: "3", targetWeight: 50, restSeconds: 0 },
+              { setNumber: 4, targetReps: "3", targetWeight: 50, restSeconds: 0 },
             ],
           },
           {
@@ -278,11 +279,11 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "Bench Ramp",
             category: "warmup",
-            notes: "bar×8 → 40kg×5 → 55kg×3, then work sets.",
+            notes: "bar×8 → 25kg×5 → 32kg×3, then work sets.",
             sets: [
               { setNumber: 1, targetReps: "8", targetWeight: 20, restSeconds: 60 },
-              { setNumber: 2, targetReps: "5", targetWeight: 40, restSeconds: 90 },
-              { setNumber: 3, targetReps: "3", targetWeight: 55, restSeconds: 90 },
+              { setNumber: 2, targetReps: "5", targetWeight: 25, restSeconds: 90 },
+              { setNumber: 3, targetReps: "3", targetWeight: 32, restSeconds: 90 },
             ],
           },
         ],
@@ -296,10 +297,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "78% 1RM. Tempo: 2-1-X (2s down, 1s pause, explosive up).",
             sets: [
-              { setNumber: 1, targetReps: "6", targetWeight: 62, restSeconds: 180 },
-              { setNumber: 2, targetReps: "6", targetWeight: 62, restSeconds: 180 },
-              { setNumber: 3, targetReps: "6", targetWeight: 62, restSeconds: 180 },
-              { setNumber: 4, targetReps: "6", targetWeight: 62, restSeconds: 180 },
+              { setNumber: 1, targetReps: "6", targetWeight: 37, restSeconds: 180 },
+              { setNumber: 2, targetReps: "6", targetWeight: 37, restSeconds: 180 },
+              { setNumber: 3, targetReps: "6", targetWeight: 37, restSeconds: 180 },
+              { setNumber: 4, targetReps: "6", targetWeight: 37, restSeconds: 180 },
             ],
           },
           {
@@ -318,9 +319,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Tempo: 2-1-2. Each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 2, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 3, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
+              { setNumber: 1, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 2, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 3, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
             ],
           },
           {
@@ -328,9 +329,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Tempo: 2-0-2. Each hand.",
             sets: [
-              { setNumber: 1, targetReps: "10", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 2, targetReps: "10", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 3, targetReps: "10", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 1, targetReps: "10", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 2, targetReps: "10", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 3, targetReps: "10", targetWeight: 10, restSeconds: 90 },
             ],
           },
         ],
@@ -526,9 +527,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "70% back squat 1RM. Tempo: 2-0-X. Keep legs fresh for weekend games.",
             sets: [
-              { setNumber: 1, targetReps: "5", targetWeight: 60, restSeconds: 150 },
-              { setNumber: 2, targetReps: "5", targetWeight: 60, restSeconds: 150 },
-              { setNumber: 3, targetReps: "5", targetWeight: 60, restSeconds: 150 },
+              { setNumber: 1, targetReps: "5", targetWeight: 42, restSeconds: 150 },
+              { setNumber: 2, targetReps: "5", targetWeight: 42, restSeconds: 150 },
+              { setNumber: 3, targetReps: "5", targetWeight: 42, restSeconds: 150 },
             ],
           },
           {
@@ -536,9 +537,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 7. Tempo: 2-0-2. Each hand.",
             sets: [
-              { setNumber: 1, targetReps: "8", targetWeight: 26, restSeconds: 120 },
-              { setNumber: 2, targetReps: "8", targetWeight: 26, restSeconds: 120 },
-              { setNumber: 3, targetReps: "8", targetWeight: 26, restSeconds: 120 },
+              { setNumber: 1, targetReps: "8", targetWeight: 18, restSeconds: 120 },
+              { setNumber: 2, targetReps: "8", targetWeight: 18, restSeconds: 120 },
+              { setNumber: 3, targetReps: "8", targetWeight: 18, restSeconds: 120 },
             ],
           },
           {
@@ -625,12 +626,12 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "Squat Ramp",
             category: "warmup",
-            notes: "bar×8 → 40kg×5 → 60kg×3 → 75kg×2. Heavier ramp for heavier work.",
+            notes: "bar×8 → 25kg×5 → 35kg×3 → 45kg×2. Heavier ramp for heavier work.",
             sets: [
               { setNumber: 1, targetReps: "8", targetWeight: 20, restSeconds: 60 },
-              { setNumber: 2, targetReps: "5", targetWeight: 40, restSeconds: 90 },
-              { setNumber: 3, targetReps: "3", targetWeight: 60, restSeconds: 90 },
-              { setNumber: 4, targetReps: "2", targetWeight: 75, restSeconds: 120 },
+              { setNumber: 2, targetReps: "5", targetWeight: 25, restSeconds: 90 },
+              { setNumber: 3, targetReps: "3", targetWeight: 35, restSeconds: 90 },
+              { setNumber: 4, targetReps: "2", targetWeight: 45, restSeconds: 120 },
             ],
           },
         ],
@@ -644,10 +645,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "87% 1RM. Lower reps, higher intensity than P1. Tempo: 2-0-X.",
             sets: [
-              { setNumber: 1, targetReps: "3", targetWeight: 87, restSeconds: 210 },
-              { setNumber: 2, targetReps: "3", targetWeight: 87, restSeconds: 210 },
-              { setNumber: 3, targetReps: "3", targetWeight: 87, restSeconds: 210 },
-              { setNumber: 4, targetReps: "3", targetWeight: 87, restSeconds: 210 },
+              { setNumber: 1, targetReps: "3", targetWeight: 52, restSeconds: 210 },
+              { setNumber: 2, targetReps: "3", targetWeight: 52, restSeconds: 210 },
+              { setNumber: 3, targetReps: "3", targetWeight: 52, restSeconds: 210 },
+              { setNumber: 4, targetReps: "3", targetWeight: 52, restSeconds: 210 },
             ],
           },
         ],
@@ -661,10 +662,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "power",
             notes: "87% 1RM, 2 reps → immediately do depth-to-CMJ.",
             sets: [
-              { setNumber: 1, targetReps: "2", targetWeight: 87, restSeconds: 0 },
-              { setNumber: 2, targetReps: "2", targetWeight: 87, restSeconds: 0 },
-              { setNumber: 3, targetReps: "2", targetWeight: 87, restSeconds: 0 },
-              { setNumber: 4, targetReps: "2", targetWeight: 87, restSeconds: 0 },
+              { setNumber: 1, targetReps: "2", targetWeight: 52, restSeconds: 0 },
+              { setNumber: 2, targetReps: "2", targetWeight: 52, restSeconds: 0 },
+              { setNumber: 3, targetReps: "2", targetWeight: 52, restSeconds: 0 },
+              { setNumber: 4, targetReps: "2", targetWeight: 52, restSeconds: 0 },
             ],
           },
           {
@@ -700,9 +701,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Heavier than P1. Each leg.",
             sets: [
-              { setNumber: 1, targetReps: "6 each", targetWeight: 20, restSeconds: 90 },
-              { setNumber: 2, targetReps: "6 each", targetWeight: 20, restSeconds: 90 },
-              { setNumber: 3, targetReps: "6 each", targetWeight: 20, restSeconds: 90 },
+              { setNumber: 1, targetReps: "6 each", targetWeight: 14, restSeconds: 90 },
+              { setNumber: 2, targetReps: "6 each", targetWeight: 14, restSeconds: 90 },
+              { setNumber: 3, targetReps: "6 each", targetWeight: 14, restSeconds: 90 },
             ],
           },
           {
@@ -710,9 +711,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "~70% trap-bar DL. Tempo: 3-1-2.",
             sets: [
-              { setNumber: 1, targetReps: "6", targetWeight: 80, restSeconds: 90 },
-              { setNumber: 2, targetReps: "6", targetWeight: 80, restSeconds: 90 },
-              { setNumber: 3, targetReps: "6", targetWeight: 80, restSeconds: 90 },
+              { setNumber: 1, targetReps: "6", targetWeight: 55, restSeconds: 90 },
+              { setNumber: 2, targetReps: "6", targetWeight: 55, restSeconds: 90 },
+              { setNumber: 3, targetReps: "6", targetWeight: 55, restSeconds: 90 },
             ],
           },
           {
@@ -884,11 +885,11 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "Bench Ramp",
             category: "warmup",
-            notes: "bar×8 → 40kg×5 → 58kg×3, then work sets.",
+            notes: "bar×8 → 25kg×5 → 35kg×3, then work sets.",
             sets: [
               { setNumber: 1, targetReps: "8", targetWeight: 20, restSeconds: 60 },
-              { setNumber: 2, targetReps: "5", targetWeight: 40, restSeconds: 90 },
-              { setNumber: 3, targetReps: "3", targetWeight: 58, restSeconds: 90 },
+              { setNumber: 2, targetReps: "5", targetWeight: 25, restSeconds: 90 },
+              { setNumber: 3, targetReps: "3", targetWeight: 35, restSeconds: 90 },
             ],
           },
         ],
@@ -902,10 +903,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "85% 1RM. Heavier, fewer reps than P1. Tempo: 2-1-X.",
             sets: [
-              { setNumber: 1, targetReps: "4", targetWeight: 68, restSeconds: 210 },
-              { setNumber: 2, targetReps: "4", targetWeight: 68, restSeconds: 210 },
-              { setNumber: 3, targetReps: "4", targetWeight: 68, restSeconds: 210 },
-              { setNumber: 4, targetReps: "4", targetWeight: 68, restSeconds: 210 },
+              { setNumber: 1, targetReps: "4", targetWeight: 40, restSeconds: 210 },
+              { setNumber: 2, targetReps: "4", targetWeight: 40, restSeconds: 210 },
+              { setNumber: 3, targetReps: "4", targetWeight: 40, restSeconds: 210 },
+              { setNumber: 4, targetReps: "4", targetWeight: 40, restSeconds: 210 },
             ],
           },
           {
@@ -924,9 +925,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 2, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 3, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
+              { setNumber: 1, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 2, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 3, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
             ],
           },
           {
@@ -934,9 +935,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Each hand.",
             sets: [
-              { setNumber: 1, targetReps: "10", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 2, targetReps: "10", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 3, targetReps: "10", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 1, targetReps: "10", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 2, targetReps: "10", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 3, targetReps: "10", targetWeight: 10, restSeconds: 90 },
             ],
           },
         ],
@@ -961,10 +962,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "power",
             notes: "~30% trap-bar 1RM. Explosive hip extension. Full triple extension.",
             sets: [
-              { setNumber: 1, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 2, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 3, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 4, targetReps: "3", targetWeight: 40, restSeconds: 150 },
+              { setNumber: 1, targetReps: "3", targetWeight: 25, restSeconds: 150 },
+              { setNumber: 2, targetReps: "3", targetWeight: 25, restSeconds: 150 },
+              { setNumber: 3, targetReps: "3", targetWeight: 25, restSeconds: 150 },
+              { setNumber: 4, targetReps: "3", targetWeight: 25, restSeconds: 150 },
             ],
           },
           {
@@ -1143,10 +1144,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "power",
             notes: "NEW for P2. RPE 7. Explosive hip drive. Olympic lift primer.",
             sets: [
-              { setNumber: 1, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 2, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 3, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 4, targetReps: "3", targetWeight: 40, restSeconds: 150 },
+              { setNumber: 1, targetReps: "3", targetWeight: 30, restSeconds: 150 },
+              { setNumber: 2, targetReps: "3", targetWeight: 30, restSeconds: 150 },
+              { setNumber: 3, targetReps: "3", targetWeight: 30, restSeconds: 150 },
+              { setNumber: 4, targetReps: "3", targetWeight: 30, restSeconds: 150 },
             ],
           },
           {
@@ -1154,9 +1155,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "75% back squat 1RM. Heavier, fewer reps than P1. Tempo: 2-0-X.",
             sets: [
-              { setNumber: 1, targetReps: "3", targetWeight: 65, restSeconds: 150 },
-              { setNumber: 2, targetReps: "3", targetWeight: 65, restSeconds: 150 },
-              { setNumber: 3, targetReps: "3", targetWeight: 65, restSeconds: 150 },
+              { setNumber: 1, targetReps: "3", targetWeight: 45, restSeconds: 150 },
+              { setNumber: 2, targetReps: "3", targetWeight: 45, restSeconds: 150 },
+              { setNumber: 3, targetReps: "3", targetWeight: 45, restSeconds: 150 },
             ],
           },
           {
@@ -1164,9 +1165,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 7. Each hand.",
             sets: [
-              { setNumber: 1, targetReps: "8", targetWeight: 26, restSeconds: 120 },
-              { setNumber: 2, targetReps: "8", targetWeight: 26, restSeconds: 120 },
-              { setNumber: 3, targetReps: "8", targetWeight: 26, restSeconds: 120 },
+              { setNumber: 1, targetReps: "8", targetWeight: 18, restSeconds: 120 },
+              { setNumber: 2, targetReps: "8", targetWeight: 18, restSeconds: 120 },
+              { setNumber: 3, targetReps: "8", targetWeight: 18, restSeconds: 120 },
             ],
           },
           {
@@ -1253,12 +1254,12 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "Squat Ramp",
             category: "warmup",
-            notes: "bar×8 → 40kg×5 → 60kg×3 → 78kg×2. Heaviest phase.",
+            notes: "bar×8 → 25kg×5 → 37kg×3 → 48kg×2. Heaviest phase.",
             sets: [
               { setNumber: 1, targetReps: "8", targetWeight: 20, restSeconds: 60 },
-              { setNumber: 2, targetReps: "5", targetWeight: 40, restSeconds: 90 },
-              { setNumber: 3, targetReps: "3", targetWeight: 60, restSeconds: 90 },
-              { setNumber: 4, targetReps: "2", targetWeight: 78, restSeconds: 120 },
+              { setNumber: 2, targetReps: "5", targetWeight: 25, restSeconds: 90 },
+              { setNumber: 3, targetReps: "3", targetWeight: 37, restSeconds: 90 },
+              { setNumber: 4, targetReps: "2", targetWeight: 48, restSeconds: 120 },
             ],
           },
         ],
@@ -1272,11 +1273,11 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "90% 1RM. Heavy doubles. Technique must be perfect — get a spotter. Tempo: X (fast intent).",
             sets: [
-              { setNumber: 1, targetReps: "2", targetWeight: 90, restSeconds: 240 },
-              { setNumber: 2, targetReps: "2", targetWeight: 90, restSeconds: 240 },
-              { setNumber: 3, targetReps: "2", targetWeight: 90, restSeconds: 240 },
-              { setNumber: 4, targetReps: "2", targetWeight: 90, restSeconds: 240 },
-              { setNumber: 5, targetReps: "2", targetWeight: 90, restSeconds: 240 },
+              { setNumber: 1, targetReps: "2", targetWeight: 55, restSeconds: 240 },
+              { setNumber: 2, targetReps: "2", targetWeight: 55, restSeconds: 240 },
+              { setNumber: 3, targetReps: "2", targetWeight: 55, restSeconds: 240 },
+              { setNumber: 4, targetReps: "2", targetWeight: 55, restSeconds: 240 },
+              { setNumber: 5, targetReps: "2", targetWeight: 55, restSeconds: 240 },
             ],
           },
         ],
@@ -1290,10 +1291,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "power",
             notes: "90% 1RM, 2 reps → immediately depth jump.",
             sets: [
-              { setNumber: 1, targetReps: "2", targetWeight: 90, restSeconds: 0 },
-              { setNumber: 2, targetReps: "2", targetWeight: 90, restSeconds: 0 },
-              { setNumber: 3, targetReps: "2", targetWeight: 90, restSeconds: 0 },
-              { setNumber: 4, targetReps: "2", targetWeight: 90, restSeconds: 0 },
+              { setNumber: 1, targetReps: "2", targetWeight: 55, restSeconds: 0 },
+              { setNumber: 2, targetReps: "2", targetWeight: 55, restSeconds: 0 },
+              { setNumber: 3, targetReps: "2", targetWeight: 55, restSeconds: 0 },
+              { setNumber: 4, targetReps: "2", targetWeight: 55, restSeconds: 0 },
             ],
           },
           {
@@ -1322,10 +1323,10 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "power",
             notes: "~30% 1RM. Full triple extension.",
             sets: [
-              { setNumber: 1, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 2, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 3, targetReps: "3", targetWeight: 40, restSeconds: 150 },
-              { setNumber: 4, targetReps: "3", targetWeight: 40, restSeconds: 150 },
+              { setNumber: 1, targetReps: "3", targetWeight: 25, restSeconds: 150 },
+              { setNumber: 2, targetReps: "3", targetWeight: 25, restSeconds: 150 },
+              { setNumber: 3, targetReps: "3", targetWeight: 25, restSeconds: 150 },
+              { setNumber: 4, targetReps: "3", targetWeight: 25, restSeconds: 150 },
             ],
           },
         ],
@@ -1339,9 +1340,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "~72% trap-bar DL. Tempo: 3-1-2.",
             sets: [
-              { setNumber: 1, targetReps: "5", targetWeight: 85, restSeconds: 90 },
-              { setNumber: 2, targetReps: "5", targetWeight: 85, restSeconds: 90 },
-              { setNumber: 3, targetReps: "5", targetWeight: 85, restSeconds: 90 },
+              { setNumber: 1, targetReps: "5", targetWeight: 57, restSeconds: 90 },
+              { setNumber: 2, targetReps: "5", targetWeight: 57, restSeconds: 90 },
+              { setNumber: 3, targetReps: "5", targetWeight: 57, restSeconds: 90 },
             ],
           },
           {
@@ -1513,11 +1514,11 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "Bench Ramp",
             category: "warmup",
-            notes: "bar×8 → 40kg×5 → 60kg×3, then work sets.",
+            notes: "bar×8 → 25kg×5 → 35kg×3, then work sets.",
             sets: [
               { setNumber: 1, targetReps: "8", targetWeight: 20, restSeconds: 60 },
-              { setNumber: 2, targetReps: "5", targetWeight: 40, restSeconds: 90 },
-              { setNumber: 3, targetReps: "3", targetWeight: 60, restSeconds: 90 },
+              { setNumber: 2, targetReps: "5", targetWeight: 25, restSeconds: 90 },
+              { setNumber: 3, targetReps: "3", targetWeight: 35, restSeconds: 90 },
             ],
           },
         ],
@@ -1531,11 +1532,11 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "87% 1RM. Heavy triples. Tempo: 2-1-X.",
             sets: [
-              { setNumber: 1, targetReps: "3", targetWeight: 70, restSeconds: 210 },
-              { setNumber: 2, targetReps: "3", targetWeight: 70, restSeconds: 210 },
-              { setNumber: 3, targetReps: "3", targetWeight: 70, restSeconds: 210 },
-              { setNumber: 4, targetReps: "3", targetWeight: 70, restSeconds: 210 },
-              { setNumber: 5, targetReps: "3", targetWeight: 70, restSeconds: 210 },
+              { setNumber: 1, targetReps: "3", targetWeight: 40, restSeconds: 210 },
+              { setNumber: 2, targetReps: "3", targetWeight: 40, restSeconds: 210 },
+              { setNumber: 3, targetReps: "3", targetWeight: 40, restSeconds: 210 },
+              { setNumber: 4, targetReps: "3", targetWeight: 40, restSeconds: 210 },
+              { setNumber: 5, targetReps: "3", targetWeight: 40, restSeconds: 210 },
             ],
           },
           {
@@ -1554,9 +1555,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Each side.",
             sets: [
-              { setNumber: 1, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 2, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 3, targetReps: "10 each", targetWeight: 24, restSeconds: 90 },
+              { setNumber: 1, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 2, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 3, targetReps: "10 each", targetWeight: 16, restSeconds: 90 },
             ],
           },
           {
@@ -1564,9 +1565,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 8. Each hand.",
             sets: [
-              { setNumber: 1, targetReps: "10", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 2, targetReps: "10", targetWeight: 16, restSeconds: 90 },
-              { setNumber: 3, targetReps: "10", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 1, targetReps: "10", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 2, targetReps: "10", targetWeight: 10, restSeconds: 90 },
+              { setNumber: 3, targetReps: "10", targetWeight: 10, restSeconds: 90 },
             ],
           },
         ],
@@ -1771,9 +1772,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "75% back squat 1RM. Doubles only — primer, not training.",
             sets: [
-              { setNumber: 1, targetReps: "2", targetWeight: 65, restSeconds: 150 },
-              { setNumber: 2, targetReps: "2", targetWeight: 65, restSeconds: 150 },
-              { setNumber: 3, targetReps: "2", targetWeight: 65, restSeconds: 150 },
+              { setNumber: 1, targetReps: "2", targetWeight: 45, restSeconds: 150 },
+              { setNumber: 2, targetReps: "2", targetWeight: 45, restSeconds: 150 },
+              { setNumber: 3, targetReps: "2", targetWeight: 45, restSeconds: 150 },
             ],
           },
           {
@@ -1791,9 +1792,9 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
             category: "strength",
             notes: "RPE 6-7. Light. Each hand.",
             sets: [
-              { setNumber: 1, targetReps: "8", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 2, targetReps: "8", targetWeight: 24, restSeconds: 90 },
-              { setNumber: 3, targetReps: "8", targetWeight: 24, restSeconds: 90 },
+              { setNumber: 1, targetReps: "8", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 2, targetReps: "8", targetWeight: 16, restSeconds: 90 },
+              { setNumber: 3, targetReps: "8", targetWeight: 16, restSeconds: 90 },
             ],
           },
         ],
