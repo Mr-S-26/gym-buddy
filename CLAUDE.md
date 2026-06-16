@@ -52,7 +52,7 @@ Analysis types: `post_workout`, `weekly`, `progression`, `chat`
 - Session recovery from localStorage on accidental close
 - Rest timer with browser notification when complete
 - PR detection with animated celebration banner
-- Body weight tracking with trend chart (goal: 73kg → 80-82kg)
+- Body weight tracking with trend chart (goal: 73kg → 80-82kg lean)
 - Weekly streak tracker
 - Offline support for coach (cached insights, offline banner)
 
