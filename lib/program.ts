@@ -208,11 +208,13 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "Catch-and-Shoot 3s (5 Spots)",
             category: "skill",
-            notes: "Corner, wing, top, wing, corner. Track makes per spot. Target 60% per set.",
+            notes: "1 set per spot: L corner, L wing, top, R wing, R corner. Log makes per spot.",
             sets: [
-              { setNumber: 1, targetReps: "5 per spot (25)", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "5 per spot (25)", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "5 per spot (25)", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
         ],
@@ -371,11 +373,13 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "3-Point Shooting (5 Spots)",
             category: "skill",
-            notes: "Spot-up from each spot. Track makes per spot. Move to next after hitting target.",
+            notes: "1 set per spot: L corner, L wing, top, R wing, R corner. Log makes per spot.",
             sets: [
-              { setNumber: 1, targetReps: "5 per spot (25)", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "5 per spot (25)", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "5 per spot (25)", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "10 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
@@ -488,11 +492,13 @@ export const NBA_PROGRAM: WorkoutTemplate[] = [
           {
             name: "3-Point Shooting (5 Spots)",
             category: "skill",
-            notes: "150+ makes from deep. Spot-up + off-movement. Track percentage.",
+            notes: "Heavy volume — 1 set per spot: L corner, L wing, top, R wing, R corner. Log makes per spot.",
             sets: [
-              { setNumber: 1, targetReps: "10 per spot (50)", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 2, targetReps: "10 per spot (50)", targetWeight: 0, restSeconds: 0 },
-              { setNumber: 3, targetReps: "10 per spot (50)", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 1, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 2, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 3, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 4, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
+              { setNumber: 5, targetReps: "20 makes", targetWeight: 0, restSeconds: 0 },
             ],
           },
           {
