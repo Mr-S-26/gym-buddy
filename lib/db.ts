@@ -110,6 +110,13 @@ export const EXERCISE_MUSCLE_GROUPS: Record<string, string> = {
   // Warmup
   "squat ramp": "legs",
   "bench ramp": "push",
+  "easy bike / jog": "conditioning",
+  "leg swings (front/back + lateral)": "legs",
+  "world's greatest stretch": "legs",
+  "ankle rocks + hip 90/90": "legs",
+  "glute bridge + bodyweight squat": "legs",
+  "pre-lifting: ramp sets": "legs",
+  "pre-plyos/court: build-up sprints + pogos": "conditioning",
   // Prehab
   "patellar isometrics (spanish squat)": "legs",
   "hip mobility flow": "legs",

@@ -12,6 +12,90 @@ import { type WorkoutTemplate } from "./db";
 // ═══════════════════════════════════════════════════════════════════
 
 export const NBA_PROGRAM: WorkoutTemplate[] = [
+  // ─── UNIVERSAL WARM-UP ───
+  {
+    id: "warmup-universal",
+    name: "Universal Warm-up",
+    day: "Every Day",
+    totalMinutes: 10,
+    sections: [
+      {
+        title: "Raise Temperature",
+        duration: "4 min",
+        exercises: [
+          {
+            name: "Easy Bike / Jog",
+            category: "warmup",
+            notes: "3-5 min easy pace. Just get the blood flowing and raise body temperature.",
+            sets: [
+              { setNumber: 1, targetReps: "3-5 min", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Dynamic Mobility",
+        duration: "5 min",
+        exercises: [
+          {
+            name: "Leg Swings (Front/Back + Lateral)",
+            category: "warmup",
+            notes: "10 each direction, each leg. Hold a wall for balance. Full range of motion.",
+            sets: [
+              { setNumber: 1, targetReps: "10 each direction/leg", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "World's Greatest Stretch",
+            category: "warmup",
+            notes: "Lunge → rotate → reach. Opens hips, thoracic spine, and ankles. 5 each side.",
+            sets: [
+              { setNumber: 1, targetReps: "5 each side", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Ankle Rocks + Hip 90/90",
+            category: "warmup",
+            notes: "Ankle rocks: 15/side (knees over toes). Hip 90/90: 8/side (rotate between internal/external).",
+            sets: [
+              { setNumber: 1, targetReps: "15 + 8 each side", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Glute Bridge + Bodyweight Squat",
+            category: "warmup",
+            notes: "Glute bridge ×15 (squeeze at top). Bodyweight squat ×10 (full depth, controlled).",
+            sets: [
+              { setNumber: 1, targetReps: "15 + 10", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+      {
+        title: "Activation (pick based on session)",
+        duration: "1 min",
+        exercises: [
+          {
+            name: "Pre-Lifting: Ramp Sets",
+            category: "warmup",
+            notes: "Before lifting → do the ramp sets listed on that day's first big lift (squat ramp, bench ramp, etc.).",
+            sets: [
+              { setNumber: 1, targetReps: "see day's ramp", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+          {
+            name: "Pre-Plyos/Court: Build-Up Sprints + Pogos",
+            category: "warmup",
+            notes: "Before plyos or court → 3 progressive build-up sprints (50%, 70%, 90%) + 5 low pogo hops.",
+            sets: [
+              { setNumber: 1, targetReps: "3 sprints + 5 pogos", targetWeight: 0, restSeconds: 0 },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   // PHASE 1 — FOUNDATION (Weeks 1–4)
   // Goal: Rebuild max + relative strength, groove tendon health,

@@ -2,7 +2,7 @@ import { db } from "./db";
 import { NBA_PROGRAM } from "./program";
 
 // Bump this version whenever program content changes (weights, exercises, etc.)
-const PROGRAM_VERSION = 3;
+const PROGRAM_VERSION = 4;
 const VERSION_KEY = "gym-buddy-program-version";
 
 const PROGRAM_IDS = NBA_PROGRAM.map((t) => t.id);
